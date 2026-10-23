@@ -1,0 +1,134 @@
+:root { --ting-ink: #49365f; --ting-muted: #756383; --ting-line: #b9a4cc; --ting-paper: #ead7ef; }
+.dark-theme { --ting-ink: #f1e8f5; --ting-muted: #c8b4d5; --ting-line: #745780; --ting-paper: #401d49; }
+.brand-role { display:block; font: 10px/1.6 "Motley Forces", sans-serif; letter-spacing:1.5px; margin-top:6px; opacity:.8; }
+.modal { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; color:var(--ting-ink); max-height: calc(100dvh - 78px); outline:none; }
+.modal-title { font-family:"Motley Forces",sans-serif; white-space:nowrap; font-size:30px; padding:10px 64px; }
+.work .modal-wrapper { gap:18px; }
+.work .modal-content { height:min(520px, calc(100dvh - 290px)); min-height:170px; }
+.about { max-width:860px; }
+.about .modal-content { height:min(570px, calc(100dvh - 210px)); }
+.contact { max-width:570px; }
+.contact .modal-content { height:auto; max-height:calc(100dvh - 210px); overflow:auto; }
+.contact .modal-content-wrapper { overflow:auto; }
+.section-eyebrow { font-family:"Motley Forces",sans-serif; font-size:12px; line-height:1.5; letter-spacing:1px; color:var(--ting-muted); }
+.section-description { font-size:14px; line-height:1.6; margin-top:4px; }
+.work-toolbar { display:flex; justify-content:space-between; align-items:center; gap:18px; width:100%; }
+.text-link { font-size:12px; color:var(--ting-ink); text-decoration:underline; text-underline-offset:4px; white-space:nowrap; }
+.work-filters { display:flex; gap:8px; flex-wrap:wrap; width:100%; }
+.work-filters button { padding:8px 14px; border:1px solid var(--ting-line); border-radius:20px; background:transparent; font:600 12px/1.3 -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif; color:var(--ting-ink); cursor:pointer; }
+.work-filters button span { margin-left:5px; opacity:.7; }
+.work-filters button[aria-pressed="true"] { color:#f6edf9; background:#766096; border-color:#766096; }
+.work .modal-content-wrapper.project-scroll { display:block; padding-right:12px; }
+.project-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:26px 18px; padding:3px 0 18px; }
+.ting-project { min-width:0; border:1px solid var(--ting-line); border-radius:18px; overflow:hidden; background:rgba(255,255,255,.16); }
+.ting-project[hidden] { display:none; }
+.project-media { display:block; position:relative; aspect-ratio:1.65; overflow:hidden; border-bottom:1px solid var(--ting-line); background:#cbb4d6; }
+.project-media img,.project-media video { display:block; width:100%; height:100%; object-fit:cover; transition:transform .35s ease; }
+.project-media:hover img,.project-media:hover video { transform:scale(1.035); }
+.project-open { position:absolute; bottom:10px; right:10px; padding:6px 10px; border-radius:20px; background:#ead7efed; color:#49365f; font-size:11px; font-weight:600; box-shadow:0 2px 8px #49365f20; }
+.project-body { padding:16px; }
+.project-body h2 { font-size:18px; font-weight:700; line-height:1.4; margin:6px 0 10px; }
+.project-body a { color:inherit; text-decoration:none; }
+.project-body a:hover { text-decoration:underline; text-underline-offset:4px; }
+.project-body > p:not(.section-eyebrow) { font-size:13px; line-height:1.85; color:var(--ting-muted); }
+.project-tags { display:flex; gap:5px; flex-wrap:wrap; margin-top:14px; }
+.project-tags span { font-size:10px; line-height:1.5; padding:3px 7px; border:1px solid var(--ting-line); border-radius:5px; color:var(--ting-muted); }
+.project-count { text-align:center; font-size:12px; color:var(--ting-muted); margin:10px 0 14px; }
+.profile-intro { display:grid; grid-template-columns:118px 1fr; gap:24px; align-items:center; }
+.profile-portrait { width:118px; height:146px; border-radius:18px; border:3px solid #927aa7; background-image:url('/portfolio/assets/early-portfolio/page-03.png'); background-size:490% auto; background-position:28.5% 52%; }
+.profile-name { font-size:30px; font-weight:700; margin:8px 0 10px; }
+.profile-name span { display:block; font-size:13px; font-weight:500; margin-top:7px; }
+.profile-summary { font-size:13px; line-height:1.9; color:var(--ting-muted); }
+.profile-stats { display:grid; grid-template-columns:repeat(3,1fr); margin:26px 0; border-top:1px solid var(--ting-line); border-bottom:1px solid var(--ting-line); padding:20px 0; }
+.profile-stats > div { text-align:center; border-right:1px solid var(--ting-line); }
+.profile-stats > div:last-child { border:0; }
+.profile-stats strong { display:block; font:25px/1.5 "Motley Forces",sans-serif; }
+.profile-stats span { font-size:11px; color:var(--ting-muted); }
+.bio-section { margin-top:26px; }
+.bio-section > h3 { font-size:18px; font-weight:700; margin-bottom:12px; }
+.bio-section p { font-size:13px; line-height:1.95; color:var(--ting-muted); margin-bottom:10px; }
+.bio-section strong { color:var(--ting-ink); }
+.ability-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+.ability-grid > div { border:1px solid var(--ting-line); border-radius:12px; padding:15px; }
+.ability-grid h4 { font-size:14px; font-weight:600; margin-bottom:8px; }
+.ability-grid p { font-size:12px; margin:0; }
+.career-list article { border-left:2px solid var(--ting-line); padding:0 0 24px 18px; }
+.career-list article:last-child { padding-bottom:0; }
+.career-list time { font:12px/1.6 "Motley Forces",sans-serif; color:var(--ting-muted); }
+.career-list h4 { font-size:15px; font-weight:700; margin:5px 0; }
+.career-list span { display:block; font-size:11px; color:var(--ting-muted); margin-bottom:8px; }
+.career-list p { font-size:12px; }
+.tool-list { border:1px solid var(--ting-line); border-radius:12px; padding:14px 16px; margin-bottom:14px; }
+.tool-list p { display:flex; gap:15px; font-size:12px; margin-bottom:5px; }
+.tool-list strong { min-width:58px; }
+.room-credits { font-size:11px; line-height:1.8; color:var(--ting-muted); border-top:1px solid var(--ting-line); margin-top:24px; padding:15px 0; }
+.room-credits summary { cursor:pointer; }
+.room-credits p { padding-top:8px; }
+.ting-contact-content { padding:8px 2px 4px; }
+.contact-heading { font-size:28px; font-weight:700; line-height:1.5; margin:12px 0; }
+.contact-description { font-size:13px; line-height:1.9; color:var(--ting-muted); margin-bottom:22px; }
+.contact-row { display:grid; grid-template-columns:50px 1fr 15px; align-items:center; padding:18px 0; border-top:1px solid var(--ting-line); color:var(--ting-ink); text-decoration:none; gap:10px; }
+.contact-row > span { font-family:"Motley Forces",sans-serif; font-size:12px; color:var(--ting-muted); }
+.contact-row strong { font-size:15px; font-weight:600; overflow-wrap:anywhere; }
+.contact-row:hover strong { text-decoration:underline; text-underline-offset:5px; }
+.contact-actions { display:flex; gap:10px; margin-top:20px; }
+.portfolio-button { display:inline-flex; align-items:center; justify-content:center; border:2px solid #766096; border-radius:12px; background:#766096; padding:10px 17px; font:600 12px/1.5 -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif; color:#f7eff9; cursor:pointer; text-decoration:none; }
+.portfolio-button.secondary { background:transparent; color:var(--ting-ink); border-color:var(--ting-line); }
+.copy-status { font-size:11px; color:var(--ting-muted); min-height:20px; margin-top:8px; }
+.contact-location { font-size:11px; line-height:1.8; color:var(--ting-muted); margin-top:12px; }
+.room-navigation { position:fixed; left:50%; bottom:24px; transform:translateX(-50%); z-index:3; display:flex; gap:3px; padding:5px; background:#ead7efc9; border:2px solid #b8a1ce; border-radius:30px; box-shadow:0 4px 16px #49365f15; backdrop-filter:blur(12px); opacity:0; pointer-events:none; transition:opacity .5s; }
+.room-ready .room-navigation { opacity:1; pointer-events:auto; }
+.room-navigation button { border:0; border-radius:22px; padding:9px 20px; background:transparent; font:600 12px/1.5 -apple-system,"PingFang SC",sans-serif; color:#665080; cursor:pointer; }
+.room-navigation button:hover { background:#cdb3d6; }
+.dark-theme .room-navigation { background:#401d49d9; border-color:#745780; }
+.dark-theme .room-navigation button { color:#f1e8f5; }
+.dark-theme .room-navigation button:hover { background:#62416d; }
+:focus-visible { outline:3px solid #aa7bc9; outline-offset:4px; }
+.instructions { font-family:-apple-system,"PingFang SC",sans-serif; font-size:14px; letter-spacing:1px; line-height:1.8; text-align:center; }
+.loading-screen-button,.no-sound-button { font-family:"Motley Forces",-apple-system,"PingFang SC",sans-serif; }
+@media(max-width:900px) and (min-width:769px) { .project-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media(max-width:768px) {
+  .brand-role { font-size:7px; letter-spacing:.6px; }
+  .modal { width:90%; padding:20px; border-width:6px; border-radius:24px; max-height:calc(100dvh - 130px); }
+  .modal-title { font-size:24px; padding:10px 22px; }
+  .work .modal-wrapper { gap:14px; }
+  .work-toolbar { align-items:flex-start; flex-direction:column; gap:8px; }
+  .work-toolbar .section-description { font-size:12px; }
+  .work-toolbar .section-eyebrow { font-size:10px; }
+  .work .modal-content { height:calc(100dvh - 390px); min-height:170px; }
+  .work-filters { gap:5px; }
+  .work-filters button { padding:7px 10px; font-size:11px; }
+  .project-grid { grid-template-columns:1fr; gap:18px; }
+  .project-body { padding:14px; }
+  .project-media { aspect-ratio:1.6; }
+  .project-body h2 { font-size:17px; }
+  .about .modal-content { height:calc(100dvh - 290px); }
+  .profile-intro { grid-template-columns:80px 1fr; gap:14px; align-items:start; }
+  .profile-portrait { width:80px; height:105px; border-radius:14px; }
+  .profile-name { font-size:25px; margin-top:5px; }
+  .profile-name span { font-size:11px; }
+  .profile-summary { grid-column:1 / -1; font-size:12px; }
+  .profile-intro .section-eyebrow { font-size:9px; letter-spacing:.4px; }
+  .profile-stats strong { font-size:19px; }
+  .profile-stats span { font-size:9px; }
+  .profile-stats { margin:20px 0; padding:14px 0; }
+  .ability-grid { grid-template-columns:1fr; }
+  .contact .modal-content { max-height:calc(100dvh - 290px); }
+  .contact-heading { font-size:23px; }
+  .contact-row { grid-template-columns:42px 1fr 10px; gap:5px; }
+  .contact-row strong { font-size:12px; }
+  .contact-row span { font-size:10px; }
+  .room-navigation { bottom:22px; }
+  .room-navigation button { padding:8px 18px; }
+  .instructions { font-size:11px; }
+}
+@media(prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior:auto!important; transition:none!important; } }
+
+/* Covers use each project page, retaining its header in the crop. */
+.project-media img { object-position: center top; }
+/* Chinese portfolio copy uses a complete font rather than the room's demo display fonts. */
+.project-body h2, .project-body h2 a,
+.project-body > p:not(.section-eyebrow), .project-tags span,
+.section-description, .text-link, .project-open, .project-count {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+}

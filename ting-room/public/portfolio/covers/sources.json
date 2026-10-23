@@ -1,0 +1,68 @@
+[
+  {
+    "title": "企培官网搭建",
+    "page": "https://b.51cto.com/?utm_source=hometop",
+    "cover": "/portfolio/covers/enterprise-saas.webp",
+    "note": "Actual project page screenshot or artwork from the linked project"
+  },
+  {
+    "title": "AI 社区搭建",
+    "page": "https://nniro691-sudo.github.io/ai-community-pc/",
+    "cover": "/portfolio/covers/ai-community.webp",
+    "note": "Actual project page screenshot or artwork from the linked project"
+  },
+  {
+    "title": "51CTO Toolbox",
+    "page": "https://nniro691-sudo.github.io/51toolbox/",
+    "cover": "/portfolio/covers/toolbox.webp",
+    "note": "Actual project page screenshot or artwork from the linked project"
+  },
+  {
+    "title": "雅思学习 Studio",
+    "page": "https://nniro691-sudo.github.io/tingzhang-ielts-studio/?restore=1782289900",
+    "cover": "/portfolio/covers/ielts-studio.webp",
+    "note": "Public password-entry page; private interface requires owner access."
+  },
+  {
+    "title": "自律小程序",
+    "page": "https://nniro691-sudo.github.io/healthy-life/?v=eb88c2d",
+    "cover": "/portfolio/covers/healthy-life.webp",
+    "note": "Actual project page screenshot or artwork from the linked project"
+  },
+  {
+    "title": "CRM 系统",
+    "page": "https://nniro691-sudo.github.io/CRM/",
+    "cover": "/portfolio/covers/crm.webp",
+    "note": "Actual project page screenshot or artwork from the linked project"
+  },
+  {
+    "title": "员工工作台门户",
+    "page": "/portfolio/assets/intranet-portal-1.html",
+    "cover": "/portfolio/covers/intranet-1.webp",
+    "note": "Actual project page screenshot or artwork from the linked project"
+  },
+  {
+    "title": "Intranet Portal V2",
+    "page": "/portfolio/assets/intranet-portal-2.html",
+    "cover": "/portfolio/covers/intranet-2.webp",
+    "note": "Actual project page screenshot or artwork from the linked project"
+  },
+  {
+    "title": "伊问 UGC 内容页",
+    "page": "https://nniro691-sudo.github.io/ugc-yiwen/",
+    "cover": "/portfolio/covers/ugc-yiwen.webp",
+    "note": "Actual project page screenshot or artwork from the linked project"
+  },
+  {
+    "title": "IP / 品牌视觉",
+    "page": "/portfolio/ip-brand-portfolio.html",
+    "cover": "/portfolio/assets/ip-brand/bear-party-board-03.png",
+    "note": "Actual project page screenshot or artwork from the linked project"
+  },
+  {
+    "title": "早期作品集",
+    "page": "/portfolio/early-portfolio.html",
+    "cover": "/portfolio/assets/early-portfolio/page-06.png",
+    "note": "Actual project page screenshot or artwork from the linked project"
+  }
+]

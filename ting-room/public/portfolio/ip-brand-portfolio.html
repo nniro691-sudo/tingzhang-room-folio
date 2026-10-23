@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP / 品牌视觉项目｜TING · DESIGN</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <style>
+        :root {
+            color-scheme: dark;
+            --acid: #C7FF4B;
+            --blue: #2D7DFF;
+            --ink: #050607;
+            --surface: #F7FBFF;
+        }
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: 'Noto Sans SC', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background:
+                radial-gradient(circle at 20% 8%, rgba(45, 125, 255, .24), transparent 34%),
+                radial-gradient(circle at 80% 0%, rgba(199, 255, 75, .18), transparent 30%),
+                linear-gradient(180deg, #07100f 0%, #050607 48%, #070b12 100%);
+            color: var(--surface);
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            background-image:
+                linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+            background-size: 56px 56px;
+            mask-image: linear-gradient(to bottom, rgba(0,0,0,.8), transparent 74%);
+        }
+        .font-anton { font-family: 'Anton', sans-serif; }
+        .glass {
+            background: rgba(8, 12, 14, .62);
+            border: 1px solid rgba(255, 255, 255, .12);
+            box-shadow: 0 24px 80px rgba(0, 0, 0, .36);
+            backdrop-filter: blur(18px);
+        }
+        .image-card {
+            overflow: hidden;
+            border-radius: 28px;
+            border: 1px solid rgba(255, 255, 255, .16);
+            background: rgba(255, 255, 255, .04);
+            box-shadow: 0 20px 70px rgba(0, 0, 0, .28);
+        }
+        .image-card img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        .tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            border: 1px solid rgba(199, 255, 75, .28);
+            background: rgba(199, 255, 75, .09);
+            color: #DFFF8A;
+            border-radius: 999px;
+            padding: 8px 12px;
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: .04em;
+        }
+        @media (max-width: 640px) {
+            html,
+            body { overflow-x: hidden; }
+            header > div {
+                padding: 12px 14px !important;
+                gap: 12px;
+            }
+            header a {
+                padding: 8px 12px !important;
+                font-size: 12px !important;
+            }
+            header .font-anton {
+                font-size: 12px;
+            }
+            main {
+                padding: 34px 14px 64px !important;
+            }
+            h1 {
+                margin-top: 18px !important;
+                font-size: clamp(3.1rem, 18vw, 4.8rem) !important;
+                line-height: .92 !important;
+            }
+            p {
+                font-size: 14px !important;
+                line-height: 1.75 !important;
+            }
+            .glass {
+                border-radius: 24px !important;
+                padding: 18px !important;
+            }
+            .glass .grid {
+                grid-template-columns: 1fr !important;
+            }
+            .tag {
+                padding: 7px 10px;
+                font-size: 11px;
+            }
+            .image-card {
+                border-radius: 18px;
+            }
+            section.mt-10 {
+                gap: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="sticky top-0 z-30 border-b border-white/10 bg-black/55 backdrop-blur-xl">
+        <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-8">
+            <a href="/?section=work" class="inline-flex items-center gap-2 rounded-full border border-white/12 bg-white/8 px-4 py-2 text-sm font-black text-white hover:border-[#C7FF4B]/45 hover:text-[#C7FF4B]">
+                <i class="ph ph-arrow-left"></i>
+                返回作品展示
+            </a>
+            <div class="font-anton tracking-[.12em] text-white/80">TING · DESIGN</div>
+        </div>
+    </header>
+
+    <main class="relative z-10 mx-auto max-w-7xl px-5 py-12 md:px-8 md:py-18">
+        <section class="grid gap-8 lg:grid-cols-[1.05fr_.95fr] lg:items-end">
+            <div>
+                <div class="font-anton text-xs uppercase tracking-[.28em] text-[#C7FF4B]">IP / Brand System</div>
+                <h1 class="mt-5 font-anton text-6xl leading-[.9] tracking-tight text-white md:text-8xl">
+                    IP 品牌视觉<br>
+                    <span class="text-[#C7FF4B]">项目沉淀</span>
+                </h1>
+                <p class="mt-7 max-w-2xl text-lg leading-9 text-white/76">
+                    围绕 51CTO 学堂与“无忧熊派对”IP，整理品牌视觉语言、吉祥物设定、主视觉活动 KV、产品 UI 应用、贴纸表情、周边物料与场景延展，让 IP 不只是形象，而是能进入课程、社区、活动与增长页面的完整视觉资产。
+                </p>
+            </div>
+            <div class="glass rounded-[32px] p-6">
+                <div class="grid grid-cols-2 gap-3 text-sm text-white/72">
+                    <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+                        <div class="text-[#C7FF4B] font-black">视觉系统</div>
+                        <div class="mt-2">品牌色 / 字体 / 组件 / 图标</div>
+                    </div>
+                    <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+                        <div class="text-[#C7FF4B] font-black">IP 设定</div>
+                        <div class="mt-2">角色表情 / 姿态 / 贴纸</div>
+                    </div>
+                    <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+                        <div class="text-[#C7FF4B] font-black">产品落地</div>
+                        <div class="mt-2">移动端 / Web / 学习场景</div>
+                    </div>
+                    <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+                        <div class="text-[#C7FF4B] font-black">品牌延展</div>
+                        <div class="mt-2">活动 KV / 周边 / 空间物料</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-12 flex flex-wrap gap-3">
+            <span class="tag"><i class="ph ph-paw-print"></i> IP 吉祥物</span>
+            <span class="tag"><i class="ph ph-palette"></i> 品牌视觉系统</span>
+            <span class="tag"><i class="ph ph-device-mobile"></i> 产品 UI 应用</span>
+            <span class="tag"><i class="ph ph-sticker"></i> 表情贴纸与周边</span>
+            <span class="tag"><i class="ph ph-sparkle"></i> AI 辅助视觉探索</span>
+        </section>
+
+        <section class="mt-10 grid gap-7">
+            <article class="image-card">
+                <img src="assets/ip-brand/bear-party-board-03.png" alt="无忧熊派对 IP 品牌视觉项目大图">
+            </article>
+            <article class="image-card">
+                <img src="assets/ip-brand/bear-party-board-02.png" alt="无忧熊派对品牌视觉系统与场景应用">
+            </article>
+            <article class="image-card">
+                <img src="assets/ip-brand/bear-party-board-01.png" alt="无忧熊派对视觉运营作品集">
+            </article>
+            <article class="image-card">
+                <img src="assets/ip-brand/51cto-learning-blue.png" alt="51CTO 学堂蓝色品牌产品 UI 视觉系统">
+            </article>
+            <article class="image-card">
+                <img src="assets/ip-brand/51cto-learning-red.png" alt="51CTO 学堂红色品牌产品 UI 视觉系统">
+            </article>
+        </section>
+    </main>
+</body>
+</html>

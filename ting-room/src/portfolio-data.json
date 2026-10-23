@@ -1,0 +1,166 @@
+[
+  {
+    "title": "企培官网搭建",
+    "category": "product",
+    "label": "01 / Enterprise SaaS",
+    "description": "企业培训产品官网。围绕 B 端业务梳理信息架构、产品表达与视觉体系，推进官网搭建和全局体验优化。",
+    "tags": [
+      "企业 SaaS",
+      "信息架构",
+      "视觉体系"
+    ],
+    "href": "https://b.51cto.com/?utm_source=hometop",
+    "media": "/portfolio/covers/enterprise-saas.webp",
+    "kind": "image",
+    "coverSource": "https://b.51cto.com/?utm_source=hometop"
+  },
+  {
+    "title": "AI 社区搭建",
+    "category": "product",
+    "label": "02 / AI Community",
+    "description": "从 PC 主站到 H5 的社区体验搭建。在多终端保持一致的视觉语言，兼顾内容呈现、浏览路径与快速响应。",
+    "tags": [
+      "社区体验",
+      "PC / H5",
+      "响应式"
+    ],
+    "href": "https://nniro691-sudo.github.io/ai-community-pc/",
+    "media": "/portfolio/covers/ai-community.webp",
+    "kind": "image",
+    "coverSource": "https://nniro691-sudo.github.io/ai-community-pc/"
+  },
+  {
+    "title": "51CTO Toolbox",
+    "category": "product",
+    "label": "03 / Toolbox",
+    "description": "从 0 到 1 搭建工具产品，把工具聚合、信息结构与页面交互组织为清晰、易用的全站体验。",
+    "tags": [
+      "0→1 搭建",
+      "工具产品",
+      "AI 工作流"
+    ],
+    "href": "https://nniro691-sudo.github.io/51toolbox/",
+    "media": "/portfolio/covers/toolbox.webp",
+    "kind": "image",
+    "coverSource": "https://nniro691-sudo.github.io/51toolbox/"
+  },
+  {
+    "title": "雅思学习 Studio",
+    "category": "product",
+    "label": "04 / Learning",
+    "description": "面向雅思学习的内容与练习产品，探索学习内容组织、AI 辅助练习与日常学习体验。",
+    "tags": [
+      "学习产品",
+      "内容组织",
+      "AI 辅助练习"
+    ],
+    "href": "https://nniro691-sudo.github.io/tingzhang-ielts-studio/?restore=1782289900",
+    "media": "/portfolio/covers/ielts-studio.webp",
+    "kind": "image",
+    "coverSource": "https://nniro691-sudo.github.io/tingzhang-ielts-studio/?restore=1782289900",
+    "coverNote": "Public password-entry page; private interface requires owner access."
+  },
+  {
+    "title": "自律小程序",
+    "category": "product",
+    "label": "05 / Healthy Life",
+    "description": "围绕健康生活与习惯养成搭建轻量工具，让日常计划、练习与自我管理更容易坚持。",
+    "tags": [
+      "健康生活",
+      "习惯养成",
+      "轻量工具"
+    ],
+    "href": "https://nniro691-sudo.github.io/healthy-life/?v=eb88c2d",
+    "media": "/portfolio/covers/healthy-life.webp",
+    "kind": "image",
+    "coverSource": "https://nniro691-sudo.github.io/healthy-life/?v=eb88c2d"
+  },
+  {
+    "title": "CRM 系统",
+    "category": "product",
+    "label": "06 / Business Tools",
+    "description": "以客户管理、数据看板与业务流程为核心，探索复杂业务信息的组织和高效操作路径。",
+    "tags": [
+      "客户管理",
+      "数据看板",
+      "业务流程"
+    ],
+    "href": "https://nniro691-sudo.github.io/CRM/",
+    "media": "/portfolio/covers/crm.webp",
+    "kind": "image",
+    "coverSource": "https://nniro691-sudo.github.io/CRM/"
+  },
+  {
+    "title": "员工工作台门户",
+    "category": "product",
+    "label": "07 / Intranet",
+    "description": "企业内网工作台，将常用工具、工作信息与入口集中组织，帮助员工快速进入日常工作。",
+    "tags": [
+      "企业内网",
+      "工具聚合",
+      "工作效率"
+    ],
+    "href": "/portfolio/assets/intranet-portal-1.html",
+    "media": "/portfolio/covers/intranet-1.webp",
+    "kind": "image",
+    "coverSource": "/portfolio/assets/intranet-portal-1.html"
+  },
+  {
+    "title": "Intranet Portal V2",
+    "category": "product",
+    "label": "08 / Workplace Portal",
+    "description": "围绕日程、资讯、数据看板与内部系统入口，继续探索企业门户的信息层级和工作效率。",
+    "tags": [
+      "日程资讯",
+      "数据看板",
+      "内部系统"
+    ],
+    "href": "/portfolio/assets/intranet-portal-2.html",
+    "media": "/portfolio/covers/intranet-2.webp",
+    "kind": "image",
+    "coverSource": "/portfolio/assets/intranet-portal-2.html"
+  },
+  {
+    "title": "伊问 UGC 内容页",
+    "category": "product",
+    "label": "09 / UGC & Growth",
+    "description": "围绕用户生成内容组织页面，把内容增长、用户互动与转化路径连接起来。",
+    "tags": [
+      "内容增长",
+      "用户互动",
+      "转化页面"
+    ],
+    "href": "https://nniro691-sudo.github.io/ugc-yiwen/",
+    "media": "/portfolio/covers/ugc-yiwen.webp",
+    "kind": "image",
+    "coverSource": "https://nniro691-sudo.github.io/ugc-yiwen/"
+  },
+  {
+    "title": "IP / 品牌视觉",
+    "category": "brand",
+    "label": "10 / IP & Brand",
+    "description": "51CTO 学堂与无忧熊派对的品牌及 IP 视觉探索，让活动、产品与内容拥有可延展的视觉资产。",
+    "tags": [
+      "51CTO 学堂",
+      "无忧熊派对",
+      "品牌资产"
+    ],
+    "href": "/portfolio/ip-brand-portfolio.html",
+    "media": "/portfolio/assets/ip-brand/bear-party-board-03.png",
+    "kind": "image"
+  },
+  {
+    "title": "早期作品集",
+    "category": "archive",
+    "label": "11 / Design Archive",
+    "description": "收录京东 App、电商体验、移动产品与视觉设计实践，呈现从业务理解、设计思考到界面落地的积累。",
+    "tags": [
+      "京东 App",
+      "电商体验",
+      "视觉设计"
+    ],
+    "href": "/portfolio/early-portfolio.html",
+    "media": "/portfolio/assets/early-portfolio/page-06.png",
+    "kind": "image"
+  }
+]
