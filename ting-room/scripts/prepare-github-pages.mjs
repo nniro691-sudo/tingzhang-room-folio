@@ -14,6 +14,7 @@ async function adapt(folder) {
     content = content.replace(/(["'`(=])\/(assets|audio|models|textures|fonts|draco|images|media|portfolio|shaders)\//g,
       (_, lead, directory) => `${lead}${base}${directory}/`);
     content = content.replace(/(["'])\/\?section=/g, `$1${base}?section=`);
+    content = content.replace(/(["'])\/(resume\.(?:html|css))/g, `$1${base}$2`);
     await writeFile(file, content);
   }
 }

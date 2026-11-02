@@ -45,23 +45,7 @@
     "coverSource": "https://nniro691-sudo.github.io/51toolbox/"
   },
   {
-    "title": "雅思学习 Studio",
-    "category": "product",
-    "label": "04 / Learning",
-    "description": "面向雅思学习的内容与练习产品，探索学习内容组织、AI 辅助练习与日常学习体验。",
-    "tags": [
-      "学习产品",
-      "内容组织",
-      "AI 辅助练习"
-    ],
-    "href": "https://nniro691-sudo.github.io/tingzhang-ielts-studio/?restore=1782289900",
-    "media": "/portfolio/covers/ielts-studio.webp",
-    "kind": "image",
-    "coverSource": "https://nniro691-sudo.github.io/tingzhang-ielts-studio/?restore=1782289900",
-    "coverNote": "Public password-entry page; private interface requires owner access."
-  },
-  {
-    "title": "自律小程序",
+    "title": "日日有序",
     "category": "product",
     "label": "05 / Healthy Life",
     "description": "围绕健康生活与习惯养成搭建轻量工具，让日常计划、练习与自我管理更容易坚持。",
@@ -70,10 +54,10 @@
       "习惯养成",
       "轻量工具"
     ],
-    "href": "https://nniro691-sudo.github.io/healthy-life/?v=eb88c2d",
-    "media": "/portfolio/covers/healthy-life.webp",
+    "href": "https://nniro691-sudo.github.io/healthy-life/",
+    "media": "/portfolio/covers/healthy-life-v2.png",
     "kind": "image",
-    "coverSource": "https://nniro691-sudo.github.io/healthy-life/?v=eb88c2d"
+    "coverSource": "https://nniro691-sudo.github.io/healthy-life/"
   },
   {
     "title": "CRM 系统",
@@ -162,5 +146,95 @@
     "href": "/portfolio/early-portfolio.html",
     "media": "/portfolio/assets/early-portfolio/page-06.png",
     "kind": "image"
+  },
+  {
+    "title": "Cybertruck 沉浸式体验",
+    "category": "interactive",
+    "label": "12 / Cinematic Web Experience",
+    "description": "独立汽车交互设计探索。以章节式运镜呈现 Cybertruck，结合车门开合、驾驶位进入、座舱与追尾视角，以及本地试驾模拟，将产品叙事与 WebGL 交互连成完整体验。",
+    "tags": [
+      "WebGL / 3D",
+      "滚动运镜",
+      "座舱与试驾"
+    ],
+    "href": "https://nniro691-sudo.github.io/cybertruck-experience/",
+    "media": "/portfolio/covers/cybertruck-experience.png",
+    "kind": "image",
+    "coverSource": "Project QA screenshot: qa/cybertruck-desktop.png"
+  },
+  {
+    "title": "Koenigsegg One:1 交互展厅",
+    "category": "interactive",
+    "label": "13 / Interactive Automotive Showcase",
+    "description": "独立汽车展示设计研究。围绕 One:1 构建深色工作室，以连续环绕、细节特写、金色网格可视化和自由查看，探索由镜头驱动的沉浸式产品表达。",
+    "tags": [
+      "3D 产品展示",
+      "镜头叙事",
+      "金色网格模式"
+    ],
+    "href": "https://nniro691-sudo.github.io/cybertruck-experience/one1/",
+    "media": "/portfolio/covers/koenigsegg-one1.webp",
+    "kind": "image",
+    "coverSource": "Original project render: public/assets/frames/f000.webp"
+  },
+  {
+    "title": "FDE 实战小队",
+    "category": "brand",
+    "label": "14 / IP & Content Strategy",
+    "description": "围绕豚稳稳、浣升升、熊码码三位角色，整合 IP 设定、账号运营、短视频脚本、视频封面与表情周边，呈现从角色形象到内容应用的完整企划。",
+    "tags": [
+      "IP 角色设计",
+      "内容运营",
+      "表情与周边"
+    ],
+    "href": "https://nniro691-sudo.github.io/fde-squad/",
+    "media": "/portfolio/covers/fde-squad.png",
+    "kind": "image",
+    "coverSource": "https://nniro691-sudo.github.io/fde-squad/"
+  },
+  {
+    "title": "蓝枢 · 智慧物流",
+    "category": "product",
+    "label": "15 / Logistics Digital Twin",
+    "description": "智慧物流数字孪生管理平台，通过仓储场景可视化串联运营总览、运输车辆、仓储管理与货物追踪，探索物流业务信息与空间场景的协同呈现。设备状态与运营指标为演示数据。",
+    "tags": [
+      "数字孪生",
+      "物流可视化",
+      "运营管理"
+    ],
+    "href": "https://nniro691-sudo.github.io/lanshu-logistics/",
+    "media": "/portfolio/covers/lanshu-logistics.png",
+    "kind": "image",
+    "coverSource": "https://nniro691-sudo.github.io/lanshu-logistics/"
+  },
+  {
+    "title": "小浣熊 AI 办公专区",
+    "category": "product",
+    "label": "16 / AI Workplace Learning",
+    "description": "整合 AI 办公课程、能力认证与企业实践案例的专题网站。通过清晰的学习入口、场景指南与小浣熊形象，连接工具体验、系统学习和职场应用。",
+    "tags": [
+      "AI 办公",
+      "课程与认证",
+      "专题体验"
+    ],
+    "href": "https://nniro691-sudo.github.io/xiaohuanxiong-ai-work/",
+    "media": "/portfolio/covers/xiaohuanxiong-ai-work.png",
+    "kind": "image",
+    "coverSource": "https://nniro691-sudo.github.io/xiaohuanxiong-ai-work/"
+  },
+  {
+    "title": "精培学习中心",
+    "category": "product",
+    "label": "17 / Learning Experience",
+    "description": "围绕软考备考组织班级、课程、练习与学情报告，将多科目学习进度、知识掌握分析和行动建议整合为清晰的学习体验。",
+    "tags": [
+      "学习体验",
+      "学情可视化",
+      "备考规划"
+    ],
+    "href": "https://nniro691-sudo.github.io/jingpei-learning-center/",
+    "media": "/portfolio/covers/jingpei-learning-center-v2.png",
+    "kind": "image",
+    "coverSource": "https://nniro691-sudo.github.io/jingpei-learning-center/"
   }
 ]

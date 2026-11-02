@@ -5,8 +5,12 @@ const escape = (value) => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','
 const grid = document.querySelector('#project-grid');
 grid.innerHTML = projects.map(project => {
   const media = `<img src="${escape(project.media)}" alt="${escape(project.title)}页面封面" loading="lazy" decoding="async" width="1100" height="660">`;
-  return `<article class="ting-project" data-category="${escape(project.category)}"><a class="project-media" href="${escape(project.href)}" target="_blank" rel="noopener noreferrer" aria-label="查看${escape(project.title)}">${media}<span class="project-open" aria-hidden="true">查看项目 ↗</span></a><div class="project-body"><p class="section-eyebrow">${escape(project.label)}</p><h2><a href="${escape(project.href)}" target="_blank" rel="noopener noreferrer">${escape(project.title)}</a></h2><p>${escape(project.description)}</p><div class="project-tags">${project.tags.map(tag => `<span>${escape(tag)}</span>`).join('')}</div></div></article>`;
+  const address = project.href.startsWith('https://') ? new URL(project.href).hostname : 'ting.design / portfolio';
+  return `<article class="ting-project" data-category="${escape(project.category)}"><a class="project-media" href="${escape(project.href)}" target="_blank" rel="noopener noreferrer" aria-label="查看${escape(project.title)}"><span class="project-browser-bar" aria-hidden="true"><span class="project-browser-dots"><i></i><i></i><i></i></span><span class="project-browser-address">${escape(address)}</span><span class="project-browser-expand">↗</span></span><span class="project-screen">${media}</span><span class="project-open" aria-hidden="true">查看项目 ↗</span></a><div class="project-body"><p class="section-eyebrow">${escape(project.label)}</p><h2><a href="${escape(project.href)}" target="_blank" rel="noopener noreferrer">${escape(project.title)}</a></h2><p>${escape(project.description)}</p><div class="project-tags">${project.tags.map(tag => `<span>${escape(tag)}</span>`).join('')}</div></div></article>`;
 }).join('');
+
+document.querySelector('[data-filter="all"] span').textContent = projects.length;
+document.querySelector('#project-count').textContent = `共 ${projects.length} 个项目`;
 
 const filters = document.querySelectorAll('[data-filter]');
 filters.forEach(button => button.addEventListener('click', () => {
@@ -54,10 +58,16 @@ document.querySelector('#copy-email').addEventListener('click', async () => {
   }
 });
 
-new MutationObserver(() => {
+const readyObserver = new MutationObserver(() => {
   if (!document.querySelector('.loading-screen')) {
     document.body.classList.add('room-ready');
-    const section = new URLSearchParams(location.search).get('section');
-    if (['work','about','contact'].includes(section)) openSection(section);
+    readyObserver.disconnect();
   }
-}).observe(document.body, {childList: true});
+});
+readyObserver.observe(document.body, {childList: true});
+
+import "./room-fusion.js";
+
+import "./room-decor.js";
+
+import "./room-life.js";
