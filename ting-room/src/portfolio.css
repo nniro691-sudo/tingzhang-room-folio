@@ -35,7 +35,7 @@
 .project-tags span { font-size:10px; line-height:1.5; padding:3px 7px; border:1px solid var(--ting-line); border-radius:5px; color:var(--ting-muted); }
 .project-count { text-align:center; font-size:12px; color:var(--ting-muted); margin:10px 0 14px; }
 .profile-intro { display:grid; grid-template-columns:118px 1fr; gap:24px; align-items:center; }
-.profile-portrait { width:118px; height:146px; border-radius:18px; border:3px solid #927aa7; background-image:url('/portfolio/assets/early-portfolio/page-03.png'); background-size:490% auto; background-position:28.5% 52%; }
+.profile-portrait { width:118px; height:146px; border-radius:18px; border:3px solid #927aa7; background-image:url('/portfolio/assets/early-portfolio/page-03.webp'); background-size:490% auto; background-position:28.5% 52%; }
 .profile-name { font-size:30px; font-weight:700; margin:8px 0 10px; }
 .profile-name span { display:block; font-size:13px; font-weight:500; margin-top:7px; }
 .profile-summary { font-size:13px; line-height:1.9; color:var(--ting-muted); }

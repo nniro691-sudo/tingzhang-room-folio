@@ -55,7 +55,7 @@
       "轻量工具"
     ],
     "href": "https://nniro691-sudo.github.io/healthy-life/",
-    "media": "/portfolio/covers/healthy-life-v3.png",
+    "media": "/portfolio/covers/healthy-life-v3.webp",
     "kind": "image",
     "coverSource": "https://nniro691-sudo.github.io/healthy-life/"
   },
@@ -130,7 +130,7 @@
       "品牌资产"
     ],
     "href": "/portfolio/ip-brand-portfolio.html",
-    "media": "/portfolio/assets/ip-brand/bear-party-board-03.png",
+    "media": "/portfolio/assets/ip-brand/bear-party-board-03.webp",
     "kind": "image"
   },
   {
@@ -144,7 +144,7 @@
       "视觉设计"
     ],
     "href": "/portfolio/early-portfolio.html",
-    "media": "/portfolio/assets/early-portfolio/page-06.png",
+    "media": "/portfolio/assets/early-portfolio/page-06.webp",
     "kind": "image"
   },
   {
@@ -158,7 +158,7 @@
       "座舱与试驾"
     ],
     "href": "https://nniro691-sudo.github.io/cybertruck-experience/",
-    "media": "/portfolio/covers/cybertruck-experience.png",
+    "media": "/portfolio/covers/cybertruck-experience.webp",
     "kind": "image",
     "coverSource": "Project QA screenshot: qa/cybertruck-desktop.png"
   },
@@ -188,7 +188,7 @@
       "表情与周边"
     ],
     "href": "https://nniro691-sudo.github.io/fde-squad/",
-    "media": "/portfolio/covers/fde-squad.png",
+    "media": "/portfolio/covers/fde-squad.webp",
     "kind": "image",
     "coverSource": "https://nniro691-sudo.github.io/fde-squad/"
   },
@@ -203,7 +203,7 @@
       "运营管理"
     ],
     "href": "https://nniro691-sudo.github.io/lanshu-logistics/",
-    "media": "/portfolio/covers/lanshu-logistics.png",
+    "media": "/portfolio/covers/lanshu-logistics.webp",
     "kind": "image",
     "coverSource": "https://nniro691-sudo.github.io/lanshu-logistics/"
   },
@@ -218,7 +218,7 @@
       "专题体验"
     ],
     "href": "https://nniro691-sudo.github.io/xiaohuanxiong-ai-work/",
-    "media": "/portfolio/covers/xiaohuanxiong-ai-work.png",
+    "media": "/portfolio/covers/xiaohuanxiong-ai-work.webp",
     "kind": "image",
     "coverSource": "https://nniro691-sudo.github.io/xiaohuanxiong-ai-work/"
   },
@@ -233,7 +233,7 @@
       "备考规划"
     ],
     "href": "https://nniro691-sudo.github.io/jingpei-learning-center/",
-    "media": "/portfolio/covers/jingpei-learning-center-v2.png",
+    "media": "/portfolio/covers/jingpei-learning-center-v2.webp",
     "kind": "image",
     "coverSource": "https://nniro691-sudo.github.io/jingpei-learning-center/"
   }

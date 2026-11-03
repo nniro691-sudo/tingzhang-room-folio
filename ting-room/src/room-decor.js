@@ -5,14 +5,14 @@ function customize(){
  const frames=[];let kirby;T.root.traverse(o=>{if(/^Frame_[123]_Second/.test(o.name))frames.push(o);if(o.name==='Kirby_Third_Hover_Raycaster')kirby=o});
  const posterLoader=new TextureLoader();
  // Replace only the large wall-poster UV island in the existing baked atlas.
- const wallPoster=posterLoader.load('/textures/decor/sailor-moon-posters.png');wallPoster.colorSpace=SRGBColorSpace;wallPoster.flipY=false;
+ const wallPoster=posterLoader.load('/textures/decor/sailor-moon-posters.webp');wallPoster.colorSpace=SRGBColorSpace;wallPoster.flipY=false;
  const patched=new Set();T.root.traverse(o=>{const m=o.material;if(!m?.uniforms||m.uniforms.uTextureSet?.value!==2||patched.has(m))return;patched.add(m);m.uniforms.uSailorPoster={value:wallPoster};m.fragmentShader='uniform sampler2D uSailorPoster;\n'+m.fragmentShader;m.fragmentShader=m.fragmentShader.replace('vec3 finalColor = mix(dayColor, nightColor, uMixRatio);',`if(vUv.x > 0.003 && vUv.x < 0.370 && vUv.y > 0.034 && vUv.y < 0.588) {
  vec2 posterUV = vec2((vUv.x-0.003)/0.367/3.0, (vUv.y-0.034)/0.554);
  dayColor = pow(texture2D(uSailorPoster, posterUV).rgb, vec3(2.2));
  nightColor = dayColor * vec3(0.38, 0.32, 0.49);
  }
  vec3 finalColor = mix(dayColor, nightColor, uMixRatio);`);m.needsUpdate=true;});
- frames.sort((a,b)=>a.name.localeCompare(b.name)).forEach((frame,i)=>{frame.geometry.computeBoundingBox();const box=frame.geometry.boundingBox,size={x:box.max.x-box.min.x,y:box.max.y-box.min.y,z:box.max.z-box.min.z};const map=posterLoader.load('/textures/decor/sailor-moon-posters.png');map.colorSpace=SRGBColorSpace;map.flipY=true;map.repeat.set(1/3,1);map.offset.set(i/3,0);const art=new Mesh(new PlaneGeometry(size.z*.86,size.y*.86),new MeshBasicMaterial({map,side:DoubleSide}));art.name='Sailor_Moon_Poster_'+(i+1);art.rotation.y=Math.PI/2;art.position.set(box.max.x+.008,(box.min.y+box.max.y)/2,(box.min.z+box.max.z)/2);frame.add(art);});
+ frames.sort((a,b)=>a.name.localeCompare(b.name)).forEach((frame,i)=>{frame.geometry.computeBoundingBox();const box=frame.geometry.boundingBox,size={x:box.max.x-box.min.x,y:box.max.y-box.min.y,z:box.max.z-box.min.z};const map=posterLoader.load('/textures/decor/sailor-moon-posters.webp');map.colorSpace=SRGBColorSpace;map.flipY=true;map.repeat.set(1/3,1);map.offset.set(i/3,0);const art=new Mesh(new PlaneGeometry(size.z*.86,size.y*.86),new MeshBasicMaterial({map,side:DoubleSide}));art.name='Sailor_Moon_Poster_'+(i+1);art.rotation.y=Math.PI/2;art.position.set(box.max.x+.008,(box.min.y+box.max.y)/2,(box.min.z+box.max.z)/2);frame.add(art);});
  if(!kirby)return;
  // The original mesh remains a transparent hit target, preserving its hover interaction.
  kirby.material=new MeshBasicMaterial({transparent:true,opacity:0,depthWrite:false});
