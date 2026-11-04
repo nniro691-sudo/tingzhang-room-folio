@@ -7,3 +7,6 @@
 .project-screen{display:flex;align-items:center;justify-content:center;aspect-ratio:16/9;background:#fff;overflow:hidden;border-radius:0 0 9px 9px}
 .project-screen img,.project-screen video{width:100%;height:100%;object-fit:contain!important;object-position:center!important;transform:none!important;transition:none}
 .project-media:hover img,.project-media:hover video{transform:none!important}.project-open{position:static;display:block;text-align:right;padding:8px 10px;background:transparent;border-radius:0;font-size:8px}.dark-theme .project-browser-bar{background:#49394f}.dark-theme .project-screen{background:#251e2b}
+
+/* Keep tabs tappable above room panels; touch gestures belong to the canvas only. */
+.room-navigation{z-index:10001!important}.room-navigation button{touch-action:manipulation}
