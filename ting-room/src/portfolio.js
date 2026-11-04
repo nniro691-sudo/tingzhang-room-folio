@@ -71,3 +71,9 @@ import "./room-fusion.js";
 import "./room-decor.js";
 
 import "./room-life.js";
+
+import "./room-guide.js";
+
+import "./professional-story.js";
+
+import "./experience-entry.js";
