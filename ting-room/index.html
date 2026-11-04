@@ -22,7 +22,7 @@
     />
 
     <link rel="preload" href="/models/Room_Portfolio.glb" as="fetch" crossorigin="anonymous" fetchpriority="high" />
-    <script type="module" crossorigin src="/assets/index-960pW9w5.js?v=parallel-room-20261104"></script>
+    <script type="module" crossorigin src="/assets/index-960pW9w5.js?v=loading-room-20261104"></script>
     <link rel="preload" href="/textures/room/day/first_texture_set_day.webp" as="image" crossorigin="anonymous" fetchpriority="high" />
     <link rel="preload" href="/textures/room/day/second_texture_set_day.webp" as="image" crossorigin="anonymous" fetchpriority="high" />
     <link rel="preload" href="/textures/room/day/third_texture_set_day.webp" as="image" crossorigin="anonymous" fetchpriority="high" />
@@ -32,12 +32,22 @@
     <link rel="preload" href="/textures/decor/sailor-moon-posters.webp" as="image" crossorigin="anonymous" fetchpriority="low" />
     <script type="module" src="/src/portfolio.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-CGTyUClS.css?v=readable-type-20261103">
+    <style>
+      #room-loading.loading-screen{position:fixed!important;inset:0!important;margin:0!important;transform:none!important;width:100vw!important;height:100dvh!important;display:grid!important;grid-template-columns:1fr!important;align-content:center!important;justify-items:center!important;gap:0!important;padding:24px!important;box-sizing:border-box!important;background:#f1ebf3!important;color:#655470!important;border:0!important;border-radius:0!important;z-index:2147483000!important}
+      #room-loading>button,#room-loading>.instructions{display:none!important}
+      .room-loading-status{width:min(280px,80vw);text-align:center;font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,"PingFang SC",sans-serif}
+      .room-loading-name{font-size:19px;font-weight:500;letter-spacing:.5px}.room-loading-caption{font-size:11px;line-height:1.8;color:#8a7b91;margin:13px 0 24px}
+      .room-loading-track{height:2px;background:#ddd1e2;overflow:hidden;border-radius:2px}.room-loading-track:after{content:"";display:block;width:38%;height:100%;background:#8d7899;animation:room-loading-slide 1.5s ease-in-out infinite}.room-loading-note{font-size:9px;color:#9b8ba3;margin:18px 0 0;letter-spacing:1px}
+      @keyframes room-loading-slide{0%{transform:translateX(-110%)}100%{transform:translateX(370%)}}
+      @media(prefers-reduced-motion:reduce){.room-loading-track:after{animation:none;width:100%;opacity:.6}}
+    </style>
   </head>
   <body class="light-theme">
     <div class="ting-brand" aria-label="TING ZHANG 资深产品设计师">TING ZHANG<span class="brand-role">PRODUCT DESIGNER · BEIJING</span></div>
     <style>.ting-brand{position:fixed;top:35px;left:36px;z-index:2;font-family:"Motley Forces",sans-serif;color:#746398;font-size:25px;letter-spacing:1px;pointer-events:none}.dark-theme .ting-brand{color:#e5daed}@media(max-width:600px){.ting-brand{top:30px;left:22px;font-size:18px}}</style>
 
-    <div class="loading-screen">
+    <div class="loading-screen" id="room-loading">
+      <div class="room-loading-status" role="status" aria-live="polite"><div class="room-loading-name">Ting’s Studio</div><p class="room-loading-caption">正在准备你的探索空间…</p><div class="room-loading-track" aria-hidden="true"></div><p class="room-loading-note">高清场景加载中 · 声音默认关闭</p></div>
       <button class="loading-screen-button">
         进入设计空间
       </button>
