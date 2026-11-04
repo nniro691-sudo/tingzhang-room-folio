@@ -41,7 +41,7 @@ document.addEventListener('click',event=>{const button=event.target.closest('[da
 window.addEventListener('ting:open',event=>setPanel(event.detail));window.addEventListener('ting:close',()=>setPanel(''));
 const hideInvitation=document.querySelector('.invitation-hide');
 function syncInvitation(){hideInvitation.textContent=invitation.classList.contains('collapsed')?'展开 +':'收起 −';hideInvitation.setAttribute('aria-label',invitation.classList.contains('collapsed')?'展开户主介绍':'收起房间介绍')}
-if(matchMedia('(max-width:700px)').matches)invitation.classList.add('collapsed');syncInvitation();
+invitation.classList.remove('collapsed');syncInvitation();
 hideInvitation.addEventListener('click',()=>{invitation.classList.toggle('collapsed');syncInvitation()});
 // Room-object clicks use the original modal runtime. Observe it so both ways of entering share the same navigation state.
 const observer=new MutationObserver(()=>{const visible=[...document.querySelectorAll('.modal')].find(m=>m.style.display==='block');const name=visible?['work','about','contact'].find(c=>visible.classList.contains(c)):'';setPanel(name)});document.querySelectorAll('.modal').forEach(m=>observer.observe(m,{attributes:true,attributeFilter:['style']}));
