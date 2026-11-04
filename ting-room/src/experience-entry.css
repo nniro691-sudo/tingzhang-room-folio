@@ -4,3 +4,6 @@
 .loading-screen{grid-template-columns:minmax(280px,1fr) minmax(160px,.6fr)!important;gap:32vw!important;padding:7vh 5vw!important;background:linear-gradient(90deg,#f1ebf3f5 0%,#f1ebf3e8 27%,#f1ebf300 48%,#f1ebf300 74%,#f1ebf3cf 100%)!important}
 .entry-intro{max-width:420px}.entry-intro h1{font-size:clamp(25px,2.6vw,37px);line-height:1.55;letter-spacing:-.5px}.entry-intro>p{font-size:12px}.entry-character video{width:210px;height:min(55dvh,440px)}.entry-character>span{font-size:9px;white-space:nowrap}.loading-screen .instructions{color:#6c5879!important}
 @media(max-width:700px){.loading-screen{grid-template-columns:1fr!important;gap:0!important;padding:22px!important;align-content:end!important;background:linear-gradient(0deg,#f1ebf3fa 0%,#f1ebf3ed 37%,#f1ebf330 70%,#f1ebf355 100%)!important}.entry-intro{max-width:100%;padding-bottom:24px}.entry-intro h1{font-size:25px;margin:12px 0}.entry-intro>p{font-size:10px}.entry-character{position:absolute;right:12px;bottom:60px;pointer-events:none}.entry-character video{width:112px;height:220px}.entry-intro{padding-right:85px}.entry-eyebrow{font-size:6px}.entry-action{margin-top:16px}.loading-screen .instructions{font-size:7px!important}}
+
+/* Load directly into the room; no separate welcome or enter screen. */
+.loading-screen{display:none!important}

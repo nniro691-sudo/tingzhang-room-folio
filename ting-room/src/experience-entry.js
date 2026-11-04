@@ -1,20 +1,5 @@
 import './experience-entry.css';
 
-const loading=document.querySelector('.loading-screen');
-if(loading){
- const start=loading.querySelector('.loading-screen-button');start.disabled=true;start.textContent='进入设计空间';
- const intro=document.createElement('div');intro.className='entry-intro';intro.innerHTML='<span class="entry-eyebrow">TING ZHANG / PRODUCT & VISUAL DESIGN</span><h1>你好，我是张婷。<br>让设计，连接业务与体验。</h1><p>15 年设计经验，横跨企业 SaaS、电商与品牌视觉。<br>在这里，了解我的设计判断、项目实践和创作日常。</p>';
- const visual=document.createElement('div');visual.className='entry-character';visual.innerHTML='<video muted autoplay loop playsinline preload="metadata" src="/portfolio/assets/guide/ting-presenter.webm" aria-label="张婷的动态数字人形象"></video><span>设计师 · 创作者 · 持续探索者</span>';
- const action=document.createElement('div');action.className='entry-action';const status=document.createElement('p');status.className='entry-status';status.setAttribute('role','status');status.textContent='正在准备交互场景…';action.append(start,status);
- loading.prepend(intro,visual);intro.append(action);
- loading.querySelectorAll('.instructions').forEach(el=>el.textContent='拖动探索场景 · 浏览代表案例 · 了解设计经历');
- const ready=()=>{start.disabled=false;status.textContent='已准备好 · 声音默认关闭'};
- if(loading.dataset.ready==='true')ready();window.addEventListener('ting:scene-ready',ready,{once:true});
- const video=visual.querySelector('video');if(matchMedia('(prefers-reduced-motion: reduce)').matches)video.autoplay=false;
- new MutationObserver(()=>{if(!loading.isConnected)video.pause()}).observe(document.body,{childList:true});
- document.addEventListener('visibilitychange',()=>{if(document.hidden)video.pause();else if(loading.isConnected&&!matchMedia('(prefers-reduced-motion: reduce)').matches)video.play().catch(()=>{})});
-}
-
 const caseDialog=document.createElement('dialog');caseDialog.className='full-case-dialog';caseDialog.setAttribute('aria-labelledby','full-case-dialog-title');caseDialog.innerHTML='<header><div><span>DESIGN CASE STUDY</span><h2 id="full-case-dialog-title">精培学习中心 · 完整案例</h2></div><button aria-label="关闭完整案例">关闭 ×</button></header><iframe title="精培学习中心完整设计案例" loading="lazy"></iframe>';document.body.append(caseDialog);
 const frame=caseDialog.querySelector('iframe');let returnFocus=null;
 function closeCase(){caseDialog.close()}
