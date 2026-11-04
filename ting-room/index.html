@@ -21,12 +21,12 @@
       content="张婷 TING ZHANG，常驻北京的资深产品设计师，15 年 ToB / ToC 设计经验，专注企业 SaaS、0→1 产品、设计系统与 AI 工作流。"
     />
 
-    <link rel="preload" href="/models/Room_Portfolio.glb" as="fetch" crossorigin="anonymous" fetchpriority="high" />
-    <script type="module" crossorigin src="/assets/index-960pW9w5.js?v=mobile-alpha-20261104"></script>
-    <link rel="preload" href="/textures/room/day/first_texture_set_day.webp" as="image" crossorigin="anonymous" fetchpriority="high" />
-    <link rel="preload" href="/textures/room/day/second_texture_set_day.webp" as="image" crossorigin="anonymous" fetchpriority="high" />
-    <link rel="preload" href="/textures/room/day/third_texture_set_day.webp" as="image" crossorigin="anonymous" fetchpriority="high" />
-    <link rel="preload" href="/textures/room/day/fourth_texture_set_day.webp" as="image" crossorigin="anonymous" fetchpriority="high" />
+    <link rel="modulepreload" href="/assets/room-loader.js?v=__TING_LOADER_VERSION__" />
+    <script>
+      (()=>{let cached=false;try{cached=localStorage.getItem('ting-room-complete-assets')==='__TING_ROOM_REVISION__'}catch{}if(cached)return;
+      for(const url of ['/models/Room_Portfolio.glb','/textures/room/day/first_texture_set_day.webp','/textures/room/day/second_texture_set_day.webp','/textures/room/day/third_texture_set_day.webp','/textures/room/day/fourth_texture_set_day.webp']){const link=document.createElement('link');link.rel='preload';link.as='fetch';link.crossOrigin='anonymous';link.fetchPriority='high';link.href=url;document.head.append(link)}})();
+    </script>
+    <script type="module" crossorigin src="/assets/index-960pW9w5.js?v=resilient-room-20261104"></script>
     <link rel="preload" href="/draco/draco_wasm_wrapper.js" as="fetch" crossorigin="anonymous" />
     <link rel="preload" href="/draco/draco_decoder.wasm" as="fetch" crossorigin="anonymous" />
     <link rel="preload" href="/textures/decor/sailor-moon-posters.webp" as="image" crossorigin="anonymous" fetchpriority="low" />
@@ -37,7 +37,7 @@
       #room-loading>button,#room-loading>.instructions{display:none!important}
       .room-loading-status{width:min(280px,80vw);text-align:center;font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,"PingFang SC",sans-serif}
       .room-loading-name{font-size:19px;font-weight:500;letter-spacing:.5px}.room-loading-caption{font-size:11px;line-height:1.8;color:#8a7b91;margin:13px 0 24px}
-      .room-loading-track{height:2px;background:#ddd1e2;overflow:hidden;border-radius:2px}.room-loading-track:after{content:"";display:block;width:38%;height:100%;background:#8d7899;animation:room-loading-slide 1.5s ease-in-out infinite}.room-loading-note{font-size:9px;color:#9b8ba3;margin:18px 0 0;letter-spacing:1px}
+      .room-loading-retry{margin-top:22px;padding:10px 24px;border:1px solid #ad96b9;border-radius:24px;background:#8d7899;color:white;font:12px/1.5 -apple-system,sans-serif;cursor:pointer}.room-loading-track{height:2px;background:#ddd1e2;overflow:hidden;border-radius:2px}.room-loading-track:after{content:"";display:block;width:38%;height:100%;background:#8d7899;animation:room-loading-slide 1.5s ease-in-out infinite}.room-loading-note{font-size:9px;color:#9b8ba3;margin:18px 0 0;letter-spacing:1px}
       @keyframes room-loading-slide{0%{transform:translateX(-110%)}100%{transform:translateX(370%)}}
       @media(prefers-reduced-motion:reduce){.room-loading-track:after{animation:none;width:100%;opacity:.6}}
     </style>
@@ -59,6 +59,9 @@
       <p class="desktop-instructions instructions">拖动旋转 · 滚轮缩放 · 点击房间里的物件探索</p>
       <p class="mobile-instructions instructions">单指旋转 · 双指缩放 · 点击木牌探索</p>
     </div>
+    <script>
+      setTimeout(()=>{const host=document.querySelector('.room-loading-status');if(!host||host.querySelector('.room-loading-retry'))return;const caption=host.querySelector('.room-loading-caption');if(caption)caption.textContent='加载较慢，可以继续等待或重试';const button=document.createElement('button');button.className='room-loading-retry';button.textContent='重新加载';button.onclick=()=>location.reload();host.append(button)},30000);
+    </script>
     
     <div class="overlay"></div>
 

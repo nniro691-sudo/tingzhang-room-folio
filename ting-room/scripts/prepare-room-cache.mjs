@@ -1,0 +1,16 @@
+import {readFile,writeFile} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+import path from 'node:path';
+const output=path.resolve('dist/client');
+const files=['models/Room_Portfolio.glb',...['first','second','third','fourth'].map(name=>`textures/room/day/${name}_texture_set_day.webp`)];
+const manifest={};
+for(const file of files)manifest['/'+file]=createHash('sha256').update(await readFile(path.join(output,file))).digest('hex');
+const revision=createHash('sha256').update(JSON.stringify(manifest)).digest('hex').slice(0,16);
+const helperPath=path.join(output,'assets/room-loader.js');
+let helper=await readFile(helperPath,'utf8');helper=helper.replace('__TING_ROOM_REVISION__',revision).replace('__TING_ROOM_MANIFEST__',JSON.stringify(manifest));
+await writeFile(helperPath,helper);
+const helperVersion=createHash('sha256').update(helper).digest('hex').slice(0,12);
+const runtimePath=path.join(output,'assets/index-960pW9w5.js');
+let runtime=await readFile(runtimePath,'utf8');runtime=runtime.replace('__TING_LOADER_VERSION__',helperVersion);await writeFile(runtimePath,runtime);
+const htmlPath=path.join(output,'index.html');let html=await readFile(htmlPath,'utf8');html=html.replaceAll('__TING_ROOM_REVISION__',revision).replaceAll('__TING_LOADER_VERSION__',helperVersion);html=html.replace(/(src="\/assets\/index-960pW9w5\.js\?[^"\s]+)/,`$1&loader=${helperVersion}`);await writeFile(htmlPath,html);
+console.log('Prepared validated full-quality room cache:',revision);
